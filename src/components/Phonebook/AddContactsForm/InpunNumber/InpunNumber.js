@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import s from './InpunNumber.module.css';
 
 export default function InpunNumber({ onChange, inputValue }) {
@@ -18,3 +19,8 @@ export default function InpunNumber({ onChange, inputValue }) {
     </label>
   );
 }
+
+InpunNumber.propTypes = {
+  onChange: PropTypes.func,
+  inputValue: PropTypes.string,
+};

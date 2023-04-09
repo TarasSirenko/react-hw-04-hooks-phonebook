@@ -1,4 +1,5 @@
 import s from './AddBtn.module.css';
+import PropTypes from 'prop-types';
 import React from 'react';
 
 export default function AddBtn({ onClick }) {
@@ -8,3 +9,7 @@ export default function AddBtn({ onClick }) {
     </button>
   );
 }
+
+AddBtn.propTypes = {
+  onClick: PropTypes.func,
+};

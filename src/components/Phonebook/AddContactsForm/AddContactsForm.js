@@ -1,5 +1,6 @@
 import s from './AddContactsForm.module.css';
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import shortid from 'shortid';
 
 import AddBtn from './AddBtn/AddBtn';
@@ -40,3 +41,7 @@ export default function AddContactsc({ addContact }) {
     </form>
   );
 }
+
+AddContactsc.propTypes = {
+  addContact: PropTypes.func,
+};

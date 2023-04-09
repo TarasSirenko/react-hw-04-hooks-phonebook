@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import s from './SearchEngine.module.css';
 
 export default function SearchEngine({ filter, onInputChange }) {
@@ -15,3 +16,8 @@ export default function SearchEngine({ filter, onInputChange }) {
     </label>
   );
 }
+
+SearchEngine.propTypes = {
+  filter: PropTypes.string,
+  onInputChange: PropTypes.func,
+};
